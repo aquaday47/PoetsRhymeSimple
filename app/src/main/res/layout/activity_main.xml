@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.poetsrhyme.poetsrhymebasic.MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="poetsrhyme.com"
+        android:textSize="38dp"
+        android:paddingLeft="16dp"
+        android:layout_centerHorizontal="true"
+        android:background="#5aff09"
+        android:textColor=""
+        android:textAllCaps="true"
+        android:id="@+id/title"
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Follow PoetsRhyme"
+        android:textSize="38dp"
+        android:paddingLeft="16dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#5aff09"
+        android:background="#000"
+        android:textAllCaps="false"
+        android:layout_below="@id/engage"
+        android:id="@+id/social"
+        android:paddingTop="24dp"
+        />
+
+    <LinearLayout
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/engage"
+        android:paddingTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/title"
+        android:paddingLeft="24dp"
+        android:weightSum="2"
+        android:background="@drawable/poetsrhyme_logo"
+    >
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+            <ImageButton
+
+                android:layout_width="48dp"
+
+                android:layout_height="48dp"
+                android:src="@drawable/button_engage"
+            android:background="@android:color/transparent"/>
+            <TextView
+                android:text="Create"
+                android:textAllCaps="true"
+                android:textSize="32dp"
+                android:textColor='#ec1e8a'
+                android:paddingTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="8dp"
+            android:layout_weight="1">
+            <ImageButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/button_engage"
+                android:background="@android:color/transparent"/>
+
+            <TextView
+                android:text="Participate"
+                android:textAllCaps="true"
+                android:textSize="32dp"
+                android:paddingTop="12dp"
+                android:textColor='#ec1e8a'
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="8dp"
+            android:layout_weight="1">
+            <ImageButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/button_engage"
+                android:background="@android:color/transparent"/>
+
+
+            <TextView
+                android:text="Inspire"
+                android:textAllCaps="true"
+                android:textSize="32dp"
+                android:paddingTop="12dp"
+                android:textColor='#ec1e8a'
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+        </android.support.v7.widget.LinearLayoutCompat>
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_below="@id/social"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="8dp"
+        android:paddingLeft="16dp"
+        android:weightSum="2"
+        android:background="#5aff09"
+        android:layout_alignParentBottom="true"
+
+        >
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageButton
+                android:layout_width="64dp"
+                android:src="@drawable/fb"
+
+                android:layout_height="64dp" />
+
+            <TextView
+                android:paddingTop="10dp"
+                android:text="Like on Facebook "
+                android:paddingLeft="12dp"
+                android:textSize="32dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageButton
+                android:layout_width="64dp"
+                android:src="@drawable/google"
+                android:layout_height="64dp" />
+
+            <TextView
+                android:text="Follow on Google+"
+                android:paddingLeft="12dp"
+                android:paddingTop="10dp"
+                android:textSize="32dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageButton
+                android:src="@drawable/twitter"
+                android:layout_width="64dp"
+                android:layout_height="64dp" />
+
+            <TextView
+                android:text="Tweet@poetsrhyme"
+                android:paddingLeft="12dp"
+                android:paddingTop="12dp"
+                android:textSize="31dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+        </android.support.v7.widget.LinearLayoutCompat>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
+
+
+
+
